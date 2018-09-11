@@ -8,24 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		F7FC79692148230900548735 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FC79682148230900548735 /* AppDelegate.m */; };
-		F7FC796C2148230900548735 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FC796B2148230900548735 /* ViewController.m */; };
 		F7FC796F2148230900548735 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7FC796D2148230900548735 /* Main.storyboard */; };
 		F7FC79712148230900548735 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7FC79702148230900548735 /* Assets.xcassets */; };
 		F7FC79742148230900548735 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7FC79722148230900548735 /* LaunchScreen.storyboard */; };
 		F7FC79772148230900548735 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FC79762148230900548735 /* main.m */; };
+		F7FC797F2148256A00548735 /* TRAPokemon.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FC797E2148256A00548735 /* TRAPokemon.m */; };
+		F7FC7985214829C900548735 /* TRAPokemonController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FC7984214829C900548735 /* TRAPokemonController.m */; };
+		F7FC7988214853A700548735 /* PokeSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FC7987214853A700548735 /* PokeSearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F7FC79642148230800548735 /* PokeDexC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeDexC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7FC79672148230900548735 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F7FC79682148230900548735 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F7FC796A2148230900548735 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F7FC796B2148230900548735 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F7FC796E2148230900548735 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F7FC79702148230900548735 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7FC79732148230900548735 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7FC79752148230900548735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7FC79762148230900548735 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F7FC797D2148256A00548735 /* TRAPokemon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRAPokemon.h; sourceTree = "<group>"; };
+		F7FC797E2148256A00548735 /* TRAPokemon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRAPokemon.m; sourceTree = "<group>"; };
+		F7FC7983214829C900548735 /* TRAPokemonController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRAPokemonController.h; sourceTree = "<group>"; };
+		F7FC7984214829C900548735 /* TRAPokemonController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRAPokemonController.m; sourceTree = "<group>"; };
+		F7FC7986214853A700548735 /* PokeDexC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PokeDexC-Bridging-Header.h"; sourceTree = "<group>"; };
+		F7FC7987214853A700548735 /* PokeSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeSearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +64,45 @@
 		F7FC79662148230900548735 /* PokeDexC */ = {
 			isa = PBXGroup;
 			children = (
+				F7FC79812148298800548735 /* Resources */,
+				F7FC79822148299600548735 /* ViewControllers */,
+				F7FC79802148297800548735 /* Models */,
+				F7FC7983214829C900548735 /* TRAPokemonController.h */,
+				F7FC7984214829C900548735 /* TRAPokemonController.m */,
+			);
+			path = PokeDexC;
+			sourceTree = "<group>";
+		};
+		F7FC79802148297800548735 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F7FC797D2148256A00548735 /* TRAPokemon.h */,
+				F7FC797E2148256A00548735 /* TRAPokemon.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F7FC79812148298800548735 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				F7FC79672148230900548735 /* AppDelegate.h */,
 				F7FC79682148230900548735 /* AppDelegate.m */,
-				F7FC796A2148230900548735 /* ViewController.h */,
-				F7FC796B2148230900548735 /* ViewController.m */,
 				F7FC796D2148230900548735 /* Main.storyboard */,
 				F7FC79702148230900548735 /* Assets.xcassets */,
 				F7FC79722148230900548735 /* LaunchScreen.storyboard */,
 				F7FC79752148230900548735 /* Info.plist */,
 				F7FC79762148230900548735 /* main.m */,
 			);
-			path = PokeDexC;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F7FC79822148299600548735 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F7FC7987214853A700548735 /* PokeSearchViewController.swift */,
+				F7FC7986214853A700548735 /* PokeDexC-Bridging-Header.h */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +136,7 @@
 				TargetAttributes = {
 					F7FC79632148230800548735 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -141,9 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7FC796C2148230900548735 /* ViewController.m in Sources */,
+				F7FC7985214829C900548735 /* TRAPokemonController.m in Sources */,
 				F7FC79772148230900548735 /* main.m in Sources */,
 				F7FC79692148230900548735 /* AppDelegate.m in Sources */,
+				F7FC797F2148256A00548735 /* TRAPokemon.m in Sources */,
+				F7FC7988214853A700548735 /* PokeSearchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,14 +322,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PokeDexC/Info.plist;
+				DEVELOPMENT_TEAM = 77U2457882;
+				INFOPLIST_FILE = "$(SRCROOT)/PokeDexC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.trevoradcock.PokeDexC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PokeDexC/ViewControllers/PokeDexC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -301,14 +343,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PokeDexC/Info.plist;
+				DEVELOPMENT_TEAM = 77U2457882;
+				INFOPLIST_FILE = "$(SRCROOT)/PokeDexC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.trevoradcock.PokeDexC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PokeDexC/ViewControllers/PokeDexC-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
